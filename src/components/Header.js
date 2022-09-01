@@ -1,12 +1,27 @@
-import React from 'react'
+import React from "react"
 import "../styles/Header.css"
-import { ExternalLink } from '../icons'
+import { ExternalLink } from "../icons"
 
-const Header = ({ company = "{company}" }) => {
+const HeaderTitle = ({ company, displaySubTitle }) => {
+  if (displaySubTitle === "ClientBillingPT1") {
+    return (
+      <p>
+        Client Billing{" "}
+        <span>
+          - a full payment solution for your business, free with {company}
+        </span>
+      </p>
+    )
+  }
+
+  return <p>Client Billing</p>
+}
+
+const Header = ({ company = "{company}", displaySubTitle }) => {
   return (
-    <div className='Header'>
-      <div className='HeaderLeft'>
-        <p>Client Billing <span>- a full payment solution for your business, free with {company}</span></p>
+    <div className="Header">
+      <div className="HeaderLeft">
+        <HeaderTitle company={company} displaySubTitle={displaySubTitle} />
       </div>
 
       <div className="HeaderRight">

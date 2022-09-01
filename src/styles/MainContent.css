@@ -1,0 +1,8 @@
+.MainContent{
+  width: 100%;
+  margin-top: 30.98px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}

@@ -9,12 +9,13 @@ const upgradedClickedStyle = {
 
 
 
-const UpgradeOffer = ({isUpgrated}) => {
+const UpgradeOffer = ({userClickUpgrated, userIsUpgrated}) => {
   const [upgradeClicked, setUpgradeClicked] = useState(false)
   
   const handleUpgrade = () => {
-    isUpgrated(true)
+    userClickUpgrated(true)
     setUpgradeClicked(true)
+    userIsUpgrated(true)
   }
   
   return (

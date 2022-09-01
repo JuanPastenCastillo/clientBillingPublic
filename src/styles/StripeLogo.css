@@ -1,0 +1,31 @@
+.StripeLogo-Circle {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 130px;
+  border-radius: 50%;
+  position: relative;
+  background-color: azure;
+}
+
+.StripeLogo-Circle::after {
+  content: "";
+  display: block;
+  line-height: 0;
+  padding-bottom: 100%;
+}
+
+.StripeLogo-Circle-Text {
+  position: absolute;
+  bottom: 37%;
+  width: 100%;
+  color: black;
+  font-size: 30px;
+}
+
+.StripeLogo-Title{
+  /* font-size: 3rem; */
+  /* background-color: aqua; */
+  font-weight: bold;
+  line-height: 35px;
+  font-size: 24px;
+}

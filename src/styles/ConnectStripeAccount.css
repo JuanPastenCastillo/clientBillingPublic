@@ -1,106 +1,17 @@
-.WrapperConnectStripeAccount{
-  width: 100%;
-  margin-top: 30.98px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
-  
-}
-
-.ConnectStripeAccount {
-  background-color: hsl(60, 100%, 19.1%);
-  /* width: 100%; */
-  margin-top: 30px;
-
-  /* display: flex;
-  flex-direction: column;
-  text-align: center; */
-  padding: 30px;
-  border-radius: 10px;
-  /* outline:1px red solid; */
-}
-
-.CTA-Header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.CTA-Header-Left {
-  font-weight: 700;
-}
-
-.CTA-MainContent {
-  background-color: hsl(60, 90%, 26.1%);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.CTA-MC-Logo {
-  /* margin-top: 80px;
-  margin-bottom: 30px;
-  position:relative;
-  color:black;
-  z-index: 1; */
-  margin-top: 80px;
-  margin-bottom: 30px;
-
-  width: 130px;
-  border-radius: 50%;
-  position: relative;
-  background-color: azure;
-}
-
-.CTA-MC-Logo::after {
-  /* content:"";
-  background-color: aliceblue;
-  width:150px;
-  height:150px;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  z-index: -1; */
-
-  content: "";
-  display: block;
-  line-height: 0;
-  padding-bottom: 100%;
-}
-
-.CTA-MC-Logo-Text {
-  position: absolute;
-  bottom: 37%;
-  width: 100%;
-  color: black;
-  font-size: 30px;
-}
-
-.CTA-MC-Title{
-  /* font-size: 3rem; */
-  /* background-color: aqua; */
-  font-weight: bold;
-  line-height: 35px;
-  font-size: 24px;
-}
-
-
-.CTA-MC-Subtitle{
+.CTA-MC-Subtitle {
   font-size: 15px;
   color: hsl(0, 0%, 85.3%);
   line-height: 30px;
   max-width: 50vw;
-  width:520px;
+  width: 520px;
 }
 
-.CTA-MC-TransactionFee{
+.CTA-MC-TransactionFee {
   display: flex;
   background-color: hsl(218.5, 79.2%, 66.1%);
   max-width: 40vw;
-  width:400px;
-  height:60px;
+  width: 400px;
+  height: 60px;
   border-radius: 10px;
   padding: 15px 30px;
   justify-content: space-between;
@@ -108,23 +19,13 @@
   margin-top: 20px;
 }
 
-.CTA-MC-Button{
-  margin-top: 30px;
-  border:none;
-  cursor: pointer;
-  max-width: 25vw;
-  width:200px;
-  height:40px;
-  border-radius: 4px;
-}
-
-.CTA-MC-Link{
-  color:hsl(218.5, 79.2%, 26.1%);
+.CTA-MC-Link {
+  color: hsl(218.5, 79.2%, 26.1%);
   text-decoration: none;
   margin-top: 20px;
   margin-bottom: 60px;
 }
 
-.CTA-MC-Link svg{
-  fill:hsl(218.5, 79.2%, 26.1%);
+.CTA-MC-Link svg {
+  fill: hsl(218.5, 79.2%, 26.1%);
 }

@@ -1,0 +1,9 @@
+.FinalButton{
+  margin-top: 30px;
+  border:none;
+  cursor: pointer;
+  max-width: 25vw;
+  width:200px;
+  height:40px;
+  border-radius: 4px;
+}

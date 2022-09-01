@@ -1,0 +1,9 @@
+.H-InsideMainContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.H-InsideMainContent-Left {
+  font-weight: 700;
+}

@@ -1,10 +1,10 @@
-import MainWrapper from "./components/MainWrapper.js"
+import StartPoint from "./components/StartPoint.js"
 
 function App() {
   return (
-    <MainWrapper>
+    <StartPoint>
       
-    </MainWrapper>
+    </StartPoint>
   );
 }
 
