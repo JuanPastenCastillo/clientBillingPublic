@@ -1,0 +1,19 @@
+.Dot{
+  width:4px;
+  height:4px;
+  border-radius: 50%;
+  background-color: white;
+  /* margin-left: 20px; */
+  
+}
+
+.Step{
+  display: flex;
+  /* outline: 1px red solid; */
+  justify-content: center;
+  align-items: center;
+}
+
+.Step :nth-child(1){
+  margin-left: 20px;
+}

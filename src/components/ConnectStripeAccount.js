@@ -3,6 +3,7 @@ import "../styles/ConnectStripeAccount.css"
 import { ExternalLink } from "../icons"
 import UpgradeOffer from "./UpgradeOffer.js"
 import DisplayUpgraded from "./DisplayUpgraded.js"
+import Steps from "./Steps"
 
 const ConnectStripeAccount = () => {
   const [showUpgrade, setShowUpgrade] = useState(false)
@@ -19,8 +20,7 @@ const ConnectStripeAccount = () => {
         <div className="CTA-Header">
           <div className="CTA-Header-Left">Getting started</div>
           <div className="CTA-Header-Right">
-            Step 1 of 2 <span>·</span>
-            <span>·</span>
+            <Steps actual={1} total={2} />
           </div>
         </div>
 
@@ -35,7 +35,7 @@ const ConnectStripeAccount = () => {
           </span>
           <div className="CTA-MC-TransactionFee">
             <p>Transaction Fee</p>
-            <p>{upgradeApplied ? <DisplayUpgraded/> : "5%"}</p>
+            <p>{upgradeApplied ? <DisplayUpgraded /> : "5%"}</p>
           </div>
           <button className="CTA-MC-Button" onClick={handleShowUpgrade}>
             Get Started
