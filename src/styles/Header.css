@@ -1,0 +1,30 @@
+.Header{
+  /* outline: 1px yellowgreen solid; */
+  width:100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #E6E6E6 solid;
+}
+
+.HeaderLeft p {
+  font-weight: 700;
+}
+
+.HeaderLeft span{
+  color:hsl(0, 0%, 55.3%);
+}
+
+.HeaderRight a{
+  display: flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+
+
+.HeaderRight a svg{
+  margin-left: 5px;
+  fill:white;
+}

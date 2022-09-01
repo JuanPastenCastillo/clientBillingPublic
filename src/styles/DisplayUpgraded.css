@@ -1,0 +1,7 @@
+.DisplayUpgraded :nth-child(2){
+ /* outline:1px white solid;  */
+ margin-left: 5px;
+ text-decoration: line-through;
+ text-decoration-color: white;
+ color:hsl(0, 55%, 50%);
+}
