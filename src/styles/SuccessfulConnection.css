@@ -1,0 +1,44 @@
+.SuccessfulConnection {
+  outline: 1px white solid;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 300px;
+  /* height: 80px; */
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+  color: black;
+  position: absolute;
+  /* left: 0; */
+  left: -345px;
+  bottom: 0px;
+  /* right:61vw; */
+}
+
+.SuccessfulConnection div {
+  width: 215px;
+}
+
+.SuccessfulConnection div p {
+  line-height: 20px;
+}
+.SuccessfulConnection div span {
+  color: #555555;
+}
+
+.SuccessfulConnection svg {
+  fill: green;
+  height: 30px;
+  width: 30px;
+  margin: 25px 13px 25px 21px;
+}
+
+@media screen and (max-width: 1715px) {
+  .SuccessfulConnection {
+    position: absolute;
+    left: 0;
+    /* left: -345px; */
+    bottom: 0px;
+  }
+}

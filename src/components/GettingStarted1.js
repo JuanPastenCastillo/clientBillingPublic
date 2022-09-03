@@ -5,12 +5,12 @@ import MainContent from "./MainContent"
 import InsideMainContent from "./InsideMainContent"
 import HeaderInsideMainContent from "./HeaderInsideMainContent"
 import InsideMainContentBackground from "./InsideMainContentBackground"
-import StripeLogo from "./StripeLogo"
+import LogoTitleSubTitle from "./LogoTitleSubTitle.js"
 import UpgradeOffer from "./UpgradeOffer.js"
 import DisplayUpgraded from "./DisplayUpgraded.js"
-import FinalButton from "./FinalButton"
+import GettingStartedButton from "./Buttons.js"
 
-const ConnectStripeAccount = ({ userIsUpgrated, activeComponent }) => {
+const ConnectStripeAccount = ({ setUserIsUpgrated, activeComponent }) => {
   const [showUpgrade, setShowUpgrade] = useState(false)
   const [upgradeApplied, setUpgradeApplied] = useState(false)
   const [canChange, setCanChange] = useState(false)
@@ -35,7 +35,7 @@ const ConnectStripeAccount = ({ userIsUpgrated, activeComponent }) => {
     <MainContent>
       {showUpgrade && (
         <UpgradeOffer
-          userIsUpgrated={userIsUpgrated}
+          setUserIsUpgrated={setUserIsUpgrated}
           userClickUpgrated={setUpgradeApplied}
         />
       )}
@@ -43,19 +43,22 @@ const ConnectStripeAccount = ({ userIsUpgrated, activeComponent }) => {
         <HeaderInsideMainContent actual={1} total={2} />
 
         <InsideMainContentBackground>
-          <StripeLogo />
-
-          <span className="CTA-MC-Subtitle">
-            Client billing requires a free Stripe account. Connect your existing
-            account or create a new one.
-          </span>
+          <LogoTitleSubTitle
+            logo={true}
+            textLogo="stripe"
+            title="Connect Stripe Account"
+            subTitle="Client Billing requires a free account. Connect your existing account or create a new one."
+          />
           <div className="CTA-MC-TransactionFee">
             <p>Transaction Fee</p>
             <p>{upgradeApplied ? <DisplayUpgraded /> : "5%"}</p>
           </div>
-          <FinalButton methods={[ handleShowUpgrade, componentCanChange ]}>
+          <GettingStartedButton
+            methods={[handleShowUpgrade, componentCanChange]}
+            whichButton="GettingStartedButton"
+          >
             Get Started
-          </FinalButton>
+          </GettingStartedButton>
           <a href="#" className="CTA-MC-Link">
             Find out more about Client Billing <ExternalLink />{" "}
           </a>

@@ -3,17 +3,11 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* height: 101px; */
-  /* width:100%; */
   padding: 20px 30px;
 }
 
 .WrapperUpgradeOffer > :nth-child(1) {
-  /* outline:1px white solid; */
-  /* flex-grow: 1; */
   fill: hsl(120, 100%, 10.6%);
-  /* fill:deepskyblue; */
 }
 
 .UO-Icon > svg {
@@ -27,51 +21,28 @@
 }
 
 .WrapperUpgradeOffer div:nth-child(2) {
-  /* outline: 1px white solid; */
   flex-grow: 5;
   text-align: left;
-  /* margin: auto; */
   margin-right: 30px;
   margin-left: 30px;
 }
 
-.UO-Text p {
-  /* margin-bottom: 5px; */
-  /* outline: 1px white solid; */
-}
-
-.UO-Text span{
+.UO-Text span {
   font-size: 15px;
 }
 
-
-
-.WrapperUpgradeOffer :nth-child(3)  {
-  /* outline: 1px solid solid; */
-  width:101px;
-  height:40px;
-  padding:5px 25px;
+.WrapperUpgradeOffer :nth-child(3) {
+  width: 101px;
+  height: 40px;
+  padding: 5px 25px;
   border-radius: 4px;
-  border:none;
+  border: none;
   cursor: pointer;
-  opacity:0.8;
+  opacity: 0.8;
   background-color: royalblue;
-  color:white;
-  
-  /* border:5px black solid; */
-  
-  /* flex-grow: 1; */
+  color: white;
 }
 
-.WrapperUpgradeOffer :nth-child(3):hover{
-  opacity:1;
-  /* pointer-events: none; */
-  /* color:unset;
-  background-color: unset; */
+.WrapperUpgradeOffer :nth-child(3):hover {
+  opacity: 1;
 }
-
-/* .WrapperUpgradeOffer button{
-  border:5px black solid;
-} */
-
-

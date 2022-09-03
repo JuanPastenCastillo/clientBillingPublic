@@ -4,18 +4,17 @@ import { Megaphone } from "../icons"
 
 const upgradedClickedStyle = {
   "opacity": "1"
-  
 } 
 
 
 
-const UpgradeOffer = ({userClickUpgrated, userIsUpgrated}) => {
+const UpgradeOffer = ({userClickUpgrated, setUserIsUpgrated}) => {
   const [upgradeClicked, setUpgradeClicked] = useState(false)
   
   const handleUpgrade = () => {
     userClickUpgrated(true)
     setUpgradeClicked(true)
-    userIsUpgrated(true)
+    setUserIsUpgrated(true)
   }
   
   return (

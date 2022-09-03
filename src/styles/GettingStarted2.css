@@ -1,0 +1,126 @@
+.GettingStarted2 {
+  margin-bottom: 80px;
+  width:100%;
+}
+
+.GT2-Icon {
+  margin-left: 30px;
+  margin-top: 30px;
+  /* margin-right: auto; */
+  /* outline: 1px white solid; */
+  /* width:100%; */
+  width:75px;
+  /* margin-right: 40px; */
+  display: flex;
+  align-items: center;
+  /* outline: 1px white solid; */
+  cursor: pointer;
+}
+
+.GT2-Icon:hover svg {
+  opacity: 0.8;
+}
+
+.GT2-Icon svg {
+  width: 25px;
+  height: 25px;
+  line-height: 0;
+  cursor: pointer;
+  margin-right: 8px;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.WarningToUser {
+  /* outline: 1px white solid; */
+  background-color: hsl(38.2, 78.6%, 24.5%);
+  color: black;
+  padding: 15px 20px;
+  display: flex;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  /* align-items: center; */
+  border-radius: 4px;
+}
+
+.WarningToUser {
+  margin-top: 25px;
+  /* background-color: transparent;
+  outline: 1px white solid; */
+}
+
+.WarningToUser > div > svg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.WarningToUser span {
+  text-align: left;
+  font-size: 13px;
+}
+
+.CurrencySelecter {
+  margin-bottom: 40px;
+}
+
+.CurrencySelecter > select {
+  width: 359px;
+  height: 50px;
+  padding: 10px 15px;
+  /* background-color: red; */
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.CheckboxUser {
+  /* border: yellow 3px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.CheckboxUser input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  outline: 1px solid grey;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  margin-right: 14px;
+}
+
+.CheckboxUser input[type="checkbox"]:checked {
+  background: blue;
+  border-color: blue;
+}
+.CheckboxUser input[type="checkbox"]:checked::after {
+  content: "✔";
+  /* width:5px; */
+  /* height:5px; */
+  /* background-color: white; */
+  position: absolute;
+  left: 3.5px;
+  top:-7px;
+  font-size: 9.5px;
+}
+
+
+.CheckboxUser p {
+  font-weight: bold;
+  /* outline: crimson 1px solid; */
+  /* text-decoration: underline; */
+  /* flex-grow: 99; */
+}
