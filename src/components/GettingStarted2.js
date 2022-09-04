@@ -38,7 +38,7 @@ const GettingStarted2 = ({
 
   return (
     <MainContent>
-      <SuccessfulConnection delay={999999} />
+      <SuccessfulConnection />
       <InsideMainContent>
         <HeaderInsideMainContent actual={2} total={2} />
         <InsideMainContentBackground>

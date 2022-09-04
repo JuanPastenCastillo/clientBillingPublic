@@ -1,9 +1,14 @@
 import React from 'react'
 import "../styles/MainContent.css"
 
-const MainContent = ({children}) => {
+const MainContent = ({ children, topMargin = null }) => {
+
+  const style = {
+    marginTop: topMargin,
+  }
+
   return (
-    <div className='MainContent'>{children}</div>
+    <div className='MainContent' style={topMargin !== null ? style : null}>{children}</div>
   )
 }
 

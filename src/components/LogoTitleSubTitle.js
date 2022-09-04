@@ -1,24 +1,27 @@
 import React from "react"
+import { Stripe } from "../icons"
 import "../styles/LogoTitleSubTitle.css"
 
 const LogoTitleSubTitle = ({
   logo = false,
   textLogo = "`textLogo`",
   title = "`title`",
-  subTitle = "`subTitle`"
+  subTitle = "`subTitle`",
+  customLogo = null,
 }) => {
-  
-  
-  
-  
+
+
+
+
   return (
-    <div className={logo ? "LTST-WrapperWithLogo": "LTST-WrapperWithoutLogo"}>
+    <div className={logo ? "LTST-WrapperWithLogo" : "LTST-WrapperWithoutLogo"}>
       {logo && (
         <div className="LTST-Circle">
-          <div className="LTST-Circle-Text">{textLogo}</div>
+          <div className="LTST-Circle-Text"><Stripe/></div>
         </div>
       )}
 
+      {customLogo}
       <p className="LTST-Title">{title}</p>
       <span className="LTST-Subtitle">{subTitle}</span>
     </div>

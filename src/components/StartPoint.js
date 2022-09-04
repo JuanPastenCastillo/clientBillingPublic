@@ -3,7 +3,10 @@ import Header from "./Header"
 import GettingStarted1 from "./GettingStarted1.js"
 import GettingStarted2 from "./GettingStarted2.js"
 import ImportingStripeConfigurations from "./ImportingStripeConfigurations.js"
+import ClientBillingConnected from "./ClientBillingConnected.js"
 import "../styles/StartPoint.css"
+
+
 
 const MainWrapper = () => {
   const [whichComponentDisplay, setWhichComponentDisplay] = useState("ClientBillingPT1")
@@ -34,7 +37,11 @@ const MainWrapper = () => {
       )}
 
       {whichComponentDisplay === "ImportingStripeConfigurations" && (
-        <ImportingStripeConfigurations />
+        <ImportingStripeConfigurations activeComponent={setWhichComponentDisplay} />
+      )}
+
+      {whichComponentDisplay === "ClientBillingConnected" && (
+        <ClientBillingConnected allData="" />
       )}
     </div>
   )

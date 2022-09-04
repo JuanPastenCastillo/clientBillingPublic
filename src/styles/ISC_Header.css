@@ -1,0 +1,54 @@
+.ISC_Header {
+  margin-top: 24.98px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 13px;
+}
+
+.ISC_Header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.ISC_Header > a:nth-child(1) {
+  flex-grow: 1;
+  padding-right: 16px;
+  border-right: 1px white solid;
+}
+
+.ISC_Header ul {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 5;
+}
+
+.ISC_Header ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.ISC_Header ul li svg,
+.ISC_Header > a:nth-child(3) > svg {
+  fill: white;
+  margin-right: 5px;
+}
+
+.ISC_Header ul li {
+  margin-right: 25px;
+  cursor: pointer;
+  border-bottom: 1px transparent solid;
+}
+
+
+.ISC_Header > a:nth-child(1):hover,
+.ISC_Header ul li:hover,
+.ISC_Header > a:nth-child(3):hover
+ {
+  text-decoration: underline;
+}
