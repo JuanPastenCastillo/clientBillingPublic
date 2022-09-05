@@ -15,7 +15,6 @@ const InformationUserConnected = ({ dataToShow }) => {
 
   useEffect(() => {
     for (const x of dataToShow) {
-      console.log(x)
       if (x.name === "" || x.email === "") {
         setConnection(false)
       }

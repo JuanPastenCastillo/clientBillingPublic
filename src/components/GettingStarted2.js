@@ -27,7 +27,6 @@ const GettingStarted2 = ({
   }
 
   const handleCheckbox = () => {
-    console.log("clicked!")
     setCheckboxState(!checkboxState)
   }
 
@@ -61,8 +60,6 @@ const GettingStarted2 = ({
               </span>
             </div>
             <div className="CurrencySelecter">
-              {/* // TODO Make the current choose be taking by some type of state */}
-
               <select onChange={(e) => getCurrency(e.target.value)}>
                 <option value="usd">USD - United States Dollars</option>
                 <option value="eur">EUR - EURO</option>

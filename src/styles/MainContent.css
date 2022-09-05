@@ -1,8 +1,15 @@
-.MainContent{
-  width: 100%;
+.MainContent {
   margin-top: 30.98px;
   display: flex;
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 119px) {
+  .MainContent{
+    
+    width: 100%;
+  }
+  
 }

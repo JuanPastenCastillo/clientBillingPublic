@@ -1,30 +1,49 @@
 .Header{
-  /* outline: 1px yellowgreen solid; */
   width:100%;
-  height: 54px;
+  /* height: 54px; */
   display: flex;
   justify-content: space-between;
   border-bottom: 1px #E6E6E6 solid;
+  font-size: 15px;
+  /* outline: 1px solid black; */
+}
+
+.HeaderLeft{
+  /* outline: 1px solid black; */
+  display: flex;
+  justify-content: center;
 }
 
 .HeaderLeft p {
   font-weight: 700;
+  margin-right: 10px;
 }
 
 .HeaderLeft span{
-  color:hsl(0, 0%, 55.3%);
+  color:#555555;
+}
+
+.HeaderRight{
+  /* outline: 1px black solid; */
+  margin-left: 25px;
 }
 
 .HeaderRight a{
   display: flex;
   align-items: center;
-  color:white;
+  color:black;
   text-decoration: none;
+  font-weight: 700;
 }
-
-
 
 .HeaderRight a svg{
   margin-left: 5px;
-  fill:white;
+  fill:black;
 }
+
+@media screen and (max-width:1061px) {
+  .HeaderLeft{
+    flex-direction: column;
+  }  
+}
+

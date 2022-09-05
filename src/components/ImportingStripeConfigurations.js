@@ -13,14 +13,15 @@ const ImportingStripeConfigurations = ({ activeComponent, setImportStripeConfigu
     const timer = setTimeout(() => {
       // Do some fetch here...
       // If the data is found here
-      setImportStripeConfiguration([{ name: "John", email: "John@johnny.jo" }])
+      // setImportStripeConfiguration([{ name: "{John}", email: "John@johnny.jo" }])
+      setImportStripeConfiguration([{ name: "{name}", email: "{email}" }])
       
       // If the data is not found here
       // setImportStripeConfiguration([{ name: "", email: "" }])
 
 
       setLoading(false)
-    }, 3000)
+    }, 2500)
 
     return () => {
       clearTimeout(timer)

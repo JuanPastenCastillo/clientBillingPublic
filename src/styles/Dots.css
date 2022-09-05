@@ -2,7 +2,7 @@
   width:4px;
   height:4px;
   border-radius: 50%;
-  background-color: white;
+  background-color: black;
   /* margin-left: 20px; */
   
 }
@@ -12,8 +12,22 @@
   /* outline: 1px red solid; */
   justify-content: center;
   align-items: center;
+  color:black;
 }
 
 .Step :nth-child(1){
   margin-left: 20px;
+}
+
+.Step div:nth-child(2){
+  /* outline: red 1px solid; */
+}
+
+@media screen and (max-width:390px){
+  .Step{
+    padding-left: 20px;
+  }
+  /* .Step div:nth-child(2){
+    margin-right: 0px;
+  }  */
 }

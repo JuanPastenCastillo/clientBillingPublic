@@ -1,5 +1,5 @@
 .WrapperUpgradeOffer {
-  background-color: darkgreen;
+  background-color: #D5E3FD;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
   width: 61px;
   height: 61px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #286EF1;
   fill: white;
   font-size: 9px;
   padding: 15px;
@@ -25,6 +25,12 @@
   text-align: left;
   margin-right: 30px;
   margin-left: 30px;
+  
+  
+}
+
+.WrapperUpgradeOffer div:nth-child(2) > p{
+  font-weight: 700;
 }
 
 .UO-Text span {
@@ -39,10 +45,45 @@
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  background-color: royalblue;
+  background-color: #286EF1;
   color: white;
+  font-weight: 700;
+  /* outline: 5px black solid; */
+  /* margin-left: 80px; */
 }
 
 .WrapperUpgradeOffer :nth-child(3):hover {
   opacity: 1;
+}
+
+
+@media screen and (max-width: 1020px) {
+  .WrapperUpgradeOffer{
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .WrapperUpgradeOffer div:nth-child(1){
+    position: absolute;
+    top:5px;
+    left:5px;
+  }
+  
+  .UO-Icon{
+    margin-bottom: 5px;
+  }
+  
+  .WrapperUpgradeOffer div:nth-child(2){
+    text-align: center;
+    margin-top:40px;
+    width:100%;
+    /* padding-top: 40px; */
+  }
+  
+  .WrapperUpgradeOffer button{
+   margin-top: 20px; 
+  }
+  
+  
 }

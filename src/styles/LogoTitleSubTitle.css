@@ -10,8 +10,10 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: azure;
+  background-color: #eaf1fe;
   padding: 30px;
+  fill:#635BFF;
+  margin-bottom: 22px;
 }
 
 
@@ -19,12 +21,14 @@
   font-weight: bold;
   line-height: 35px;
   font-size: 24px;
+  margin-bottom: 14px;
 }
 
 .LTST-Subtitle {
   font-size: 15px;
-  color: hsl(0, 0%, 85.3%);
+  color: #555555;
   line-height: 30px;
   max-width: 50vw;
   width: 520px;
+  
 }

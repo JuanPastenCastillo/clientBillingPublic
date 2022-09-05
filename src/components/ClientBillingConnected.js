@@ -11,7 +11,6 @@ import "../styles/ClientBillingConnected.css"
 
 const ClientBillingConnected = ({allData}) => {
   const {isUpgrated, currencySelected, importStripeConfiguration} = allData
-  console.log('importStripeConfiguration:', importStripeConfiguration)
   
   return (
     <MainContent>

@@ -45,7 +45,6 @@ const ConnectStripeAccount = ({ setUserIsUpgrated, activeComponent }) => {
         <InsideMainContentBackground>
           <LogoTitleSubTitle
             logo={true}
-            textLogo="stripe"
             title="Connect Stripe Account"
             subTitle="Client Billing requires a free account. Connect your existing account or create a new one."
           />

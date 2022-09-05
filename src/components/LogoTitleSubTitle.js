@@ -4,7 +4,6 @@ import "../styles/LogoTitleSubTitle.css"
 
 const LogoTitleSubTitle = ({
   logo = false,
-  textLogo = "`textLogo`",
   title = "`title`",
   subTitle = "`subTitle`",
   customLogo = null

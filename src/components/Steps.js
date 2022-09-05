@@ -6,16 +6,18 @@ let Dots = ({ actual = 1, total = 1 }) => {
     width: "5px",
     height: "5px",
     borderRadius: "50%",
-    backgroundColor: "white",
+    backgroundColor: "black",
     opacity: "0.5",
-    marginRight: "20px"
+    marginRight: "20px",
+    color:"black",
   }
   let dotStyleSelected = {
     width: "5px",
     height: "5px",
     borderRadius: "50%",
-    backgroundColor: "white",
-    marginRight: "20px"
+    backgroundColor: "black",
+    marginRight: "20px",
+    color:"black",
   }
 
   let arr = Array(total)

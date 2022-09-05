@@ -7,3 +7,10 @@
 .H-InsideMainContent-Left {
   font-weight: 700;
 }
+
+@media screen and (max-width: 390px) {
+  .H-InsideMainContent {
+    flex-direction: column;
+  }
+  
+}

@@ -12,9 +12,6 @@ const MainWrapper = () => {
   const [isUpgrated, setIsUpgrated] = useState(false)
   const [currencySelected, setCurrencySelected] = useState()
   const [importStripeConfiguration, setImportStripeConfiguration] = useState()
-  console.log("currencySelected:", currencySelected)
-  console.log("isUpgrated:", isUpgrated)
-  console.log("whichComponentDisplay:", whichComponentDisplay)
 
   return (
     <div className="StartPoint">

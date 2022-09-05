@@ -1,14 +1,19 @@
 .AllFinalButtons {
   border: none;
   cursor: pointer;
-  max-width: 25vw;
+  max-width: 55vw;
+  width:200px;
   border-radius: 4px;
   height: 40px;
+  background-color: #286EF1;
+  color:white;
+  
 }
 
 .GettingStartedButton {
   margin-top: 30px;
   width: 200px;
+  font-weight: 700;
 }
 
 .FinishSetupDisabled {

@@ -5,12 +5,15 @@ import { ExternalLink } from "../icons"
 const HeaderTitle = ({ company, displaySubTitle }) => {
   if (displaySubTitle === "ClientBillingPT1") {
     return (
-      <p>
-        Client Billing{" "}
+      <>
+        <p>
+          Client Billing{" "}
+        </p>
         <span>
           - a full payment solution for your business, free with {company}
         </span>
-      </p>
+
+      </>
     )
   }
 
