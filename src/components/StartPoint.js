@@ -6,13 +6,13 @@ import ImportingStripeConfigurations from "./ImportingStripeConfigurations.js"
 import ClientBillingConnected from "./ClientBillingConnected.js"
 import "../styles/StartPoint.css"
 
-
-
 const MainWrapper = () => {
-  const [whichComponentDisplay, setWhichComponentDisplay] = useState("ClientBillingPT1")
+  const [whichComponentDisplay, setWhichComponentDisplay] =
+    useState("ClientBillingPT1")
   const [isUpgrated, setIsUpgrated] = useState(false)
   const [currencySelected, setCurrencySelected] = useState()
-  console.log('currencySelected:', currencySelected)
+  const [importStripeConfiguration, setImportStripeConfiguration] = useState()
+  console.log("currencySelected:", currencySelected)
   console.log("isUpgrated:", isUpgrated)
   console.log("whichComponentDisplay:", whichComponentDisplay)
 
@@ -37,11 +37,14 @@ const MainWrapper = () => {
       )}
 
       {whichComponentDisplay === "ImportingStripeConfigurations" && (
-        <ImportingStripeConfigurations activeComponent={setWhichComponentDisplay} />
+        <ImportingStripeConfigurations
+          activeComponent={setWhichComponentDisplay}
+          setImportStripeConfiguration={setImportStripeConfiguration}
+        />
       )}
 
       {whichComponentDisplay === "ClientBillingConnected" && (
-        <ClientBillingConnected allData="" />
+        <ClientBillingConnected allData={{isUpgrated, currencySelected, importStripeConfiguration}} />
       )}
     </div>
   )

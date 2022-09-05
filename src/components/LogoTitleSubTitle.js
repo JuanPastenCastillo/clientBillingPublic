@@ -7,17 +7,13 @@ const LogoTitleSubTitle = ({
   textLogo = "`textLogo`",
   title = "`title`",
   subTitle = "`subTitle`",
-  customLogo = null,
+  customLogo = null
 }) => {
-
-
-
-
   return (
     <div className={logo ? "LTST-WrapperWithLogo" : "LTST-WrapperWithoutLogo"}>
       {logo && (
         <div className="LTST-Circle">
-          <div className="LTST-Circle-Text"><Stripe/></div>
+          <Stripe />
         </div>
       )}
 

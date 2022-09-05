@@ -6,30 +6,14 @@
   margin: 47px 25px 20px 25px;
 }
 
-.LTST-Circle {
-  margin: auto;
-  margin-bottom: 30px;
-  width: 130px;
+.LTST-Circle > svg {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  position: relative;
   background-color: azure;
+  padding: 30px;
 }
 
-.LTST-Circle::after {
-  content: "";
-  display: block;
-  line-height: 0;
-  padding-bottom: 100%;
-}
-
-.LTST-Circle-Text {
-  position: absolute;
-  bottom: 37%;
-  width: 100%;
-  color: black;
-  font-size: 150px;
-  
-}
 
 .LTST-Title{
   font-weight: bold;

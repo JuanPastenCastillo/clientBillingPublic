@@ -6,11 +6,19 @@ import MainContent from "./MainContent.js"
 import Spinner from "./Spinner.js"
 import "../styles/ISC.css"
 
-const ImportingStripeConfigurations = ({ activeComponent }) => {
+const ImportingStripeConfigurations = ({ activeComponent, setImportStripeConfiguration }) => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      // Do some fetch here...
+      // If the data is found here
+      setImportStripeConfiguration([{ name: "John", email: "John@johnny.jo" }])
+      
+      // If the data is not found here
+      // setImportStripeConfiguration([{ name: "", email: "" }])
+
+
       setLoading(false)
     }, 3000)
 
